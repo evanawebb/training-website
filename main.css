@@ -1,0 +1,73 @@
+html, body {
+  height: 100%;
+}
+.parallax { /* formula used fix an image behind a scrolling website */
+  /* background image */
+  background-image: url("/Users/owner/Desktop/EAW Portfolio/AnKat Training/AnKat/SrcPhotos/AnKatTrainingLogoWithOutCorners.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar { /*sets the properties of the top nav bar*/
+  overflow: hidden;
+  background-color: black;
+}
+.navbar a { /*sets the items in the navbar*/
+  float: left;
+  font-size: 4em;
+  color: white;
+  text-align: center;
+  padding: 5% 5%;
+  text-decoration: none;
+}
+.dropdownmenu { /*sets the position of the dropdown menu*/
+  float: right;
+  overflow: hidden;
+}
+.dropdown .options { /*sets the dropdown menu text at the top level and what the pointer should look like*/
+  cursor: pointer;
+  font-size: .5em;
+  border: .05em black;
+  color: white;
+  padding: 5% 5%;
+  background-color: inherit;
+  margin: 0;
+}
+/*sets the reaction of the background when a list item is hoverd over with the mouse*/
+.navbar a:hover, .dropdownmenu:hover .options, .options:focus {
+  background-color: grey;
+}
+/*controls the position, color and size of the boxes displayed by the dropdown menu */
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: white;
+  min-width: 10%;
+  z-index: 1;
+}
+/*controls the text displayed in the boxes in dropdown*/
+.dropdown-content a {
+  display: none;
+  color: black;
+  padding: 5% 5%;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+/*Controls the color of the box when the mouse is hovered*/
+.dropdown-content a:hover {
+  background-color: red;
+}
+.section {
+  height: 50%;
+  background-color: white;
+  font-size: 2em;
+}
+/*makes the background image scroll to be more compatible with small devices*/
+.media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
