@@ -1,10 +1,12 @@
 <template>
   <div id="app">
+    <navigationbar></navigationbar>
     <router-view/>
   </div>
 </template>
 
 <script>
+import navigationbar from '@/components/NavigationBar.vue'
 export default {
   name: 'App'
 }
