@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar is-transparent">
+<nav class="navbar has-background-black">
   <div class="navbar-brand">
     <a class="navbar-item" href="#">
       <img src="../assets/AnKatTrainingLogoWithOutCorners.jpg" alt="AnKat Training Logo" width="112" height="28">
