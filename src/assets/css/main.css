@@ -1,0 +1,9 @@
+.parallax { /* formula used fix an image behind a scrolling website */
+    /* background image */
+    background-image: url("/Users/owner/Desktop/EAW Portfolio/AnKat Training/AnKat/SrcPhotos/AnKatTrainingLogoWithOutCorners.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
