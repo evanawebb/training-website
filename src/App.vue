@@ -1,10 +1,12 @@
 <template>
   <div id="app">
+    <navigationbar></navigationbar>
     <router-view/>
   </div>
 </template>
 
 <script>
+import navigationbar from '@/components/NavigationBar.vue'
 export default {
   name: 'App'
 }
@@ -19,3 +21,4 @@ export default {
   color: #2c3e50;
 }
 </style>
+
