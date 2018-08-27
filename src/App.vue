@@ -7,6 +7,7 @@
 
 <script>
 import navigationbar from '@/components/NavigationBar.vue'
+import footer from '@/components/footer.vue'
 export default {
   name: 'App'
 }
