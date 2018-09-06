@@ -3,8 +3,16 @@ import Router from 'vue-router'
 import NavigationBar from '../components/NavigationBar.vue'
 import home from '../components/home.vue'
 import SocialMedia from '../components/SocialMedia.vue'
+import ContactUs from '../components/ContactUs.vue'
+import * as VueGoogleMaps from 'vue2-google-maps'
 
 Vue.use(Router)
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: 'YOUR_API_TOKEN',
+    libraries: 'places'
+  }
+})
 
 // components
 window.Vue = require('vue')
@@ -13,6 +21,7 @@ window.Vue = require('vue')
 Vue.component('navigationbar', NavigationBar)
 Vue.component('home', home)
 Vue.component('socialmedia', SocialMedia)
+Vue.component('contact', ContactUs)
 
 export default new Router({
   routes: [
@@ -23,10 +32,14 @@ export default new Router({
     },
     {
       path: '/social',
-      name: 'social',
+      name: 'Social',
       component: SocialMedia
 
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: ContactUs
     }
-
   ]
 })
