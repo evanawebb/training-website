@@ -9,7 +9,7 @@ import * as VueGoogleMaps from 'vue2-google-maps'
 Vue.use(Router)
 Vue.use(VueGoogleMaps, {
   load: {
-    key: 'YOUR_API_TOKEN',
+    key: 'AIzaSyDx_kPb-1Tyud9DYSwAD0l_hNpl4LrxQG0',
     libraries: 'places'
   }
 })
