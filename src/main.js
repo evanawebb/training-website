@@ -7,6 +7,7 @@ import scss from '@/assets/sass/main.scss'
 
 Vue.use(scss)
 Vue.config.productionTip = false
+require('dotenv').config()
 
 /* eslint-disable no-new */
 new Vue({

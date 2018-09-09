@@ -3,8 +3,8 @@
       <div class="tile is-6 is-parent">
         <article class="tile is-child box">
           <div class="content">
+            <!-- vue-2-googlemaps component, renders the google map with the marker -->
             <GmapMap
-
             :center="AnKatCoordinates"
             :zoom="7"
             map-type-id="terrain"
@@ -18,7 +18,8 @@
                 @click="center=AnKatCoordinates"
             />
         </GmapMap>
-        <p>Address: Wilmington, OH</p>
+        <p>Head Trainer: Annie Boylan</p>
+        <p>Address: 11850 Butternut Rd Newbury, Ohio</p>
         <p>Phone Number: 555-555-5555</p>
           </div>
         </article>
@@ -88,8 +89,10 @@
 
 <script>
 export default {
-    data: {
-        AnKatCoordinates: {lat:41.495857, lng:-81.2160987},
+    data () {
+        return {
+            AnKatCoordinates: {lat: 41.495857, lng: -81.2160987}
+        }
     }
 }
 </script>

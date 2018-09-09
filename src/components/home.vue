@@ -31,16 +31,6 @@ export default {
   color: #ffffff;
 }
 
-/* formula used fix an image behind a scrolling website */
-  /* background image */
-/* .parallax {
-  background-image: url("/assets/HorseFarm.jpg");
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 .bg-img {
         background-image: url('../assets/AnKatTraingingLogo.jpg') ;
         background-position: center center;
