@@ -11,7 +11,7 @@ app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
 
-app.get('/posts', (req, res) => {
+app.get('/horse', (req, res) => {
   res.send(
     [{
       title: 'Hello World!',
@@ -22,9 +22,12 @@ app.get('/posts', (req, res) => {
 
 app.listen(process.env.PORT || 8081)
 
+// access to mongo
 var mongoose = require('mongoose')
 
+// access credentials from env file
 var uri = process.env.MONGO_CONNECT_HORSES
+
 mongoose.connect(uri, {useNewUrlParser: true})
 var db = mongoose.connection
 db.on('error', console.error.bind(console, 'connection error'))
@@ -32,7 +35,7 @@ db.once('open', function (callback) {
   console.log('Connection Succeeded')
 })
 
-app.post('/contact', (req, res) => {
+app.post('/horse', (req, res) => {
   var db = req.db
   var title = req.body.title
   var description = req.body.description

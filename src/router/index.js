@@ -4,6 +4,8 @@ import NavigationBar from '../components/NavigationBar.vue'
 import home from '../components/home.vue'
 import SocialMedia from '../components/SocialMedia.vue'
 import ContactUs from '../components/ContactUs.vue'
+import horse from '../components/horse.vue'
+
 import * as VueGoogleMaps from 'vue2-google-maps'
 
 Vue.use(Router)
@@ -40,6 +42,11 @@ export default new Router({
       path: '/contact',
       name: 'Contact',
       component: ContactUs
+    },
+    {
+      path: '/horses',
+      name: 'Horses',
+      component: horse
     }
   ]
 })

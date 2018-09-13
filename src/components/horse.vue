@@ -2,21 +2,21 @@
 </template>
 
 <script>
-import PostsService from '@/services/PostsService'
+import HorseService from '@/services/HorseService'
 export default {
-  name: 'posts',
+  name: 'horses',
   data () {
     return {
       posts: []
     }
   },
   mounted () {
-    this.getPosts()
+    this.getHorses()
   },
   methods: {
-    async getPosts () {
-      const response = await PostsService.fetchPosts()
-      this.posts = response.data
+    async getHorses () {
+      const response = await HorseService.fetchPosts()
+      this.horse = response.data
     }
   }
 }
