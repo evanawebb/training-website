@@ -1,7 +1,7 @@
 <template>
   <!-- Hero head: will stick at the top -->
   <div class="hero-head">
-    <div class="tile is-parent transBox">
+    <div class="tile is-parent">
       <article class="tile is-child notification is-white tile-element">
           <p class="title">AnKat Training</p>
           <p class="subtitle">About Us:</p>
@@ -31,16 +31,6 @@ export default {
   color: #ffffff;
 }
 
-/* formula used fix an image behind a scrolling website */
-  /* background image */
-/* .parallax {
-  background-image: url("/assets/HorseFarm.jpg");
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 .bg-img {
         background-image: url('../assets/AnKatTraingingLogo.jpg') ;
         background-position: center center;
