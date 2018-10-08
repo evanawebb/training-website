@@ -1,7 +1,10 @@
 import Api from '@/services/Api'
 
 export default {
-  fetchPosts () {
+  fetchHorses () {
     return Api().get('horses')
+  },
+  putHorses (params) {
+    return Api().post('horses', params)
   }
 }

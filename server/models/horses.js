@@ -3,8 +3,9 @@ var mongoose = require('mongoose')
 var Schema = mongoose.Schema
 
 var HorseSchema = new Schema({
+  name: String,
   photo: String,
-  title: String,
+  video: String,
   description: String
 })
 

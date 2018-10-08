@@ -1,7 +1,7 @@
 <template>
   <!-- Hero head: will stick at the top -->
   <div class="hero-head">
-    <div class="tile is-parent transBox">
+    <div class="tile is-parent">
       <article class="tile is-child notification is-white tile-element">
           <p class="title">AnKat Training</p>
           <p class="subtitle">About Us:</p>

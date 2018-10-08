@@ -5,6 +5,7 @@ import home from '../components/home.vue'
 import SocialMedia from '../components/SocialMedia.vue'
 import ContactUs from '../components/ContactUs.vue'
 import horse from '../components/horse.vue'
+import upload from '../components/Upload.vue'
 
 import * as VueGoogleMaps from 'vue2-google-maps'
 
@@ -24,6 +25,7 @@ Vue.component('navigationbar', NavigationBar)
 Vue.component('home', home)
 Vue.component('socialmedia', SocialMedia)
 Vue.component('contact', ContactUs)
+Vue.component('upload', upload)
 
 export default new Router({
   routes: [
@@ -45,8 +47,13 @@ export default new Router({
     },
     {
       path: '/horses',
-      name: 'Horses',
+      name: 'horses',
       component: horse
+    },
+    {
+      path: '/upload',
+      name: 'Upload',
+      component: upload
     }
   ]
 })
