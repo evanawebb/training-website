@@ -1,6 +1,6 @@
-# ankat
+# Description
 
-> Ankat Training Website
+> Experimental website for the MEVN stack and BULMA framework.
 
 ## Build Setup
 
